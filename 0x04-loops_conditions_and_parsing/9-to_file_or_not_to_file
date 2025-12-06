@@ -1,37 +1,21 @@
 #!/usr/bin/env bash
-# This script gives information about the school file
-if [ -e school ]
-then
+# This script checks the existence and properties of the file named 'school'
+
+if [ -e school ]; then
     echo "school file exists"
-    if [ -s school ]
-    then
-        echo "school file is not empty"
-    else
+
+    # Check if file is empty or not
+    if [ ! -s school ]; then
         echo "school file is empty"
+    else
+        echo "school file is not empty"
     fi
-    if [ -f school ]
-    then
+
+    # Check if it is a regular file
+    if [ -f school ]; then
         echo "school is a regular file"
     fi
+
 else
     echo "school file does not exist"
 fi
-```
-
----
-
-## **Directory Structure You Need:**
-```
-system_engineering-devops/
-├── README.md
-├── 0x03-shell_variables_expansions/      (your first project)
-└── 0x04-loops_conditions_and_parsing/    (your second project)
-    ├── README.md
-    ├── 1-for_best_school
-    ├── 2-while_best_school
-    ├── 3-until_best_school
-    ├── 4-if_9_say_hi
-    ├── 5-4_bad_luck_8_is_your_chance
-    ├── 6-superstitious_numbers
-    ├── 8-for_ls
-    └── 9-to_file_or_not_to_file
