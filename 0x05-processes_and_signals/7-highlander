@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that displays its own Process ID (PID)
-
-echo "$$"
-
-
-#!/usr/bin/env bash
 # A Bash script that displays "To infinity and beyond" indefinitely and handles SIGTERM gracefully
 
 # Trap SIGTERM and print custom message instead of terminating
@@ -16,10 +10,3 @@ do
     echo "To infinity and beyond"
     sleep 2
 done
-
-
-#!/usr/bin/env bash
-# A Bash script that stops the 7-highlander process by sending it a SIGTERM signal
-
-# Find the PID of 7-highlander and send SIGTERM
-pkill -f 7-highlander
