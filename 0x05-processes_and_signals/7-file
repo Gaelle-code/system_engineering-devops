@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that creates a file named \*\'"Best School"\'\*$\?*****:) containing "Best School" with a trailing newline
+# A Bash script that creates a file named *\'"Best School"\'\*$\?*****:) containing "Best School" with a trailing newline
 
-printf 'Best School\n' > '\*'\''"Best School"'\''\*$\?*****:)'
+echo "Best School" > "*'\"Best School\"'*\$?*****:)"
